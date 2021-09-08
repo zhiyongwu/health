@@ -8,7 +8,7 @@ app = Flask(__name__)
 def api_query(name):
     data = data_query.query_data(name)
     print(data)
-    return {'data': data,'status':'success'}
+    return {'data': data, 'status': 'success'}
 
 
 if __name__ == '__main__':
