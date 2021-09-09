@@ -1,7 +1,10 @@
 from flask import Flask
 import data_query
+from flask_cors import CORS
 
 app = Flask(__name__)
+
+CORS(app, resource=r"/*")
 
 
 @app.route("/query/<name>")

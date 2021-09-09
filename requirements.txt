@@ -1,3 +1,4 @@
 python-Levenshtein
 flask
 PyMySQL
+flask-cors
