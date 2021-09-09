@@ -18,6 +18,7 @@ def _fill_cache():
             alias_arr = alias.split(',')
             name_arr.extend(alias_arr)
         _CACHES[_id] = name_arr
+    cursor.close()
 
 
 def similarity(s1, s2):
@@ -57,6 +58,7 @@ def query_data(name):
                 'value': value
             }
         )
+    cursor.close()
     return result
 
 
