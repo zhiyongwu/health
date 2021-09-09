@@ -1,4 +1,4 @@
-from apps import db
+import db
 import Levenshtein
 import math
 

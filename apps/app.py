@@ -1,5 +1,5 @@
 from flask import Flask
-from apps import data_query
+import data_query
 
 app = Flask(__name__)
 
@@ -12,4 +12,4 @@ def api_query(name):
 
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=5000)
